@@ -1,0 +1,31 @@
+[project]
+name = "ega-toolkit"
+version = "0.1.0"
+description = ""
+authors = [{name = "Jan Binkowski"}]
+requires-python = ">=3.13"
+dependencies = [
+    "crypt4gh (>=1.8.6,<2.0.0)",
+    "pandas (>=3.0.6,<4.0.0)",
+    "tqdm (>=4.70.1,<5.0.0)",
+    "click (>=8.5.0,<9.0.0)"
+]
+
+
+[tool.poetry]
+packages = [
+    {include = "ega_toolkit", from = "src"}
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.scripts]
+ega-toolkit = "ega_toolkit.main:main"
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.16.10,<0.17.0)",
+    "ty (>=0.0.84,<0.0.85)"
+]
