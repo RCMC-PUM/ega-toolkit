@@ -1,4 +1,8 @@
 # EGA Toolkit
+![Static Badge](https://img.shields.io/badge/Python-3.13-blue)
+![GitHub License](https://img.shields.io/github/license/RCMC-PUM/ega-toolkit)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+
 
 A simple CLI for preparing genomic data for the **European Genome-phenome Archive (EGA)**: generate checksum manifests, validate files, and encrypt or decrypt data using **Crypt4GH**.
 
@@ -16,7 +20,7 @@ This combines fast encryption for large files with public-key-based access contr
 
 ## Install
 
-Requires **Python >=3.13+** and Git.
+Requires **Python >=3.13** and Git.
 
 ```bash
 git clone https://github.com/RCMC-PUM/ega-toolkit.git && cd ega-toolkit
